@@ -50,8 +50,9 @@
                 </span>
                 <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt="">
             </a>
+            <!-- Logo End container-->
 
-            <!-- End Logo container-->
+            <!-- Hamburger Start -->
             <div class="menu-extras">
                 <div class="menu-item">
                     <!-- Mobile menu toggle-->
@@ -65,9 +66,10 @@
                     <!-- End mobile menu toggle-->
                 </div>
             </div>
+            <!-- Hamburger End -->
 
-            <!--Login button Start-->
-            <ul class="buy-button list-inline mb-0">
+            <!--Login button Start(Open Up the Login Form(button image is like settingsbtn))-->
+            @*<ul class="buy-button list-inline mb-0">
                 <li class="list-inline-item mb-0">
                     <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <div class="login-btn-primary"><span class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="settings" class="fea icon-sm"></i></span></div>
@@ -75,14 +77,14 @@
                     </a>
                 </li>
 
-                @* <li class="list-inline-item ps-1 mb-0">
+                 <li class="list-inline-item ps-1 mb-0">
                 <a href="https://1.envato.market/landrick" target="_blank">
                 <div class="login-btn-primary"><span class="btn btn-icon btn-pills btn-primary"><i data-feather="shopping-cart" class="fea icon-sm"></i></span></div>
                 <div class="login-btn-light"><span class="btn btn-icon btn-pills btn-light"><i data-feather="shopping-cart" class="fea icon-sm"></i></span></div>
                 </a>
-                </li> *@
-            </ul>
-            <!--Login button End-->
+                </li> 
+            </ul>*@
+            <!--Login button End(Open Up the Login Form(button image is like settingsbtn))-->
 
             <div id="navigation">
                 <!-- Navigation Menu-->
@@ -539,6 +541,7 @@
     @RenderBody();
 
     <!-- Footer Start -->
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -647,12 +650,13 @@
     </div>
     <!--Note: Cookies Js including in plugins.init.js (path like; js/plugins.init.js) and Cookies css including in _helper.scss (path like; scss/_helper.scss)-->
     <!-- Cookies End -->
-    <!-- Offcanvas Start -->
-    <div class="offcanvas offcanvas-end shadow border-0" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <!-- Offcanvas Start(NavBar Setting Icon) -->
+
+    @*<div class="offcanvas offcanvas-end shadow border-0" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header p-4 border-bottom">
             <h5 id="offcanvasRightLabel" class="mb-0">
                 <img src="images/logo-dark.png" height="24" class="light-version" alt="">
-                <img src="images/logo-light.png" height="24" class="dark-version" alt="">
+                <!--<img src="images/logo-light.png" height="24" class="dark-version" alt="">-->
             </h5>
             <button type="button" class="btn-close d-flex align-items-center text-dark" data-bs-dismiss="offcanvas" aria-label="Close"><i class="uil uil-times fs-4"></i></button>
         </div>
@@ -726,10 +730,10 @@
                 <li class="list-inline-item mb-0"><a href="https://shreethemes.in" target="_blank" class="rounded"><i class="uil uil-globe align-middle" title="website"></i></a></li>
             </ul><!--end icon-->
         </div>
-    </div>
-    <!-- Offcanvas End -->
-    <!-- Switcher Start -->
-    <a href="javascript:void(0)" class="card switcher-btn shadow-md text-primary z-index-1 d-md-inline-flex d-none" data-bs-toggle="offcanvas" data-bs-target="#switcher-sidebar">
+    </div>*@
+    <!-- Offcanvas End(NavBar Setting Icon) -->
+    <!-- Switcher Start(Setting icon at the left for theme selection) -->
+    @*<a href="javascript:void(0)" class="card switcher-btn shadow-md text-primary z-index-1 d-md-inline-flex d-none" data-bs-toggle="offcanvas" data-bs-target="#switcher-sidebar">
         <i class="mdi mdi-cog mdi-24px mdi-spin align-middle"></i>
     </a>
 
@@ -788,9 +792,9 @@
                 <li class="list-inline-item mb-0"><a href="https://shreethemes.in" target="_blank" class="rounded"><i class="uil uil-globe align-middle" title="website"></i></a></li>
             </ul>
         </div>
-    </div>
+    </div>*@
+    <!-- Switcher End(Setting icon at the left for theme selection) -->
 
-    <!-- Switcher End -->
     <!-- Back to top -->
     <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
     <!-- Back to top -->
