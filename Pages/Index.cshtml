@@ -1,55 +1,156 @@
 ﻿@page
+@model NexCountStoreFront.Pages.IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
+<!--Finalized Hero Start-->
+<!--Finalized Hero Styles-->
+<style>
+    #home{
+        background: url('images/gym/bg.jpg') center center;
+    }
 
+    @@media (max-width: 767px) {
 
+        .title-heading {
+            text-align: center;
+            margin-bottom: 25px
+        }
+    }
 
-
-<!-- Hero Start -->
-<section class="bg-home d-flex align-items-center" style="background: url('images/gym/bg.jpg') center center;">
+</style>
+<section id="home" class="bg-home d-flex align-items-center" @* style="background: url('images/gym/bg.jpg') center center;" *@>
+    @* class="bg-half-170 d-table w-100 overflow-hidden" *@
     <div class="bg-overlay bg-gradient-overlay"></div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- First Row -->
+            <div class="col-md-6">
+                <div class="title-heading">
+                    <h1 class="heading mb-3 text-white">NexCount Apps Store</h1>
+
+                    <p class="para-desc text-muted text-white">
+                        We help empower your business with the right software. Explore our offerings and start growing today!.
+
+                    </p>
+                    <p class="para-desc text-muted text-white">Explore our diverse selection of ready-made and customizable applications tailored to your specific needs and budget.</p>
+                    <div class="mt-4 pt-2">
+                        <a href="https://1.envato.market/landrick" target="_blank" class="btn btn-primary">Explore App</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+            <!-- Second Row - Always in Column Form -->
+
+
+            <div class="col-md-6">
+                <div class="row">
+                    @foreach (var cardData in Model.CardDataList)
+                    {
+                        <div class="col-md-12 my-2">
+                            <div class="d-flex features feature-primary key-feature align-items-center p-2 rounded shadow border border-light">
+                                <div class="icon text-center rounded-circle me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor fea icon-ex-md"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                    @*  <img src="@cardData.ImageUrl" class="img-fluid rounded" alt="..." width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> *@
+
+                                </div>
+                                <div class="flex-1 ">
+                                    <h4 class="title mb-0 text-white">@cardData.Title.</h4>
+                                    <p class="text-muted text-white">
+                                        @cardData.Description
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end col-->
+                    }
+
+                    @*  <div class="col-md-12 mt-4 pt-2">
+                    <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow border border-light">
+                    <div class="icon text-center rounded-circle me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart fea icon-ex-md"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <div class="flex-1 d-flex flex-column">
+                    <h2 class="title mb-0 text-white">Browser Compatibility</h2>
+                    <p class="text-muted text-white">
+                    We help empower your business with the right software. Explore our offerings and start growing today!.
+
+                    </p>
+                    </div>
+                    </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-12 mt-4 pt-2">
+                    <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow border border-light">
+                    <div class="icon text-center rounded-circle me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye fea icon-ex-md"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </div>
+                    <div class="flex-1">
+                    <h4 class="title mb-0 text-white">Retina Ready</h4>
+                    </div>
+                    </div>
+                    </div><!--end col--> *@
+                </div><!--end row-->
+            </div><!--end col-->
+
+        </div><!--end row-->
+    </div><!--end container-->
+</section>
+<!--Finalized Hero End-->
+
+
+
+@* <!-- Hero Start -->
+<section class="bg-home d-flex align-items-center" style="background: url('images/gym/bg.jpg') center center;">
+     <div class="bg-overlay bg-gradient-overlay"></div>
     <div class="container">
-        <div class="row mt-3 justify-content-center">
-            <div class="col-12">
+        <div class="row mt-3">
+            <div class="col-lg-12">
                 <div class="title-heading text-center">
                     <h4 class="heading heading-lg mb-3 fw-bold text-white title-dark">NexCount Apps Store</h4>
-                    <p class="para-desc text-white-50 mx-auto">We help empower your business with the right software. Explore our offerings and start growing today!.</p>
-
+                    <p class="text-white-50 mx-auto">We help empower your business with the right software. Explore our offerings and start growing today!.</p>
                     <div class="mt-4 pt-2">
                         <a href="AppsList" class="btn btn-primary">Explore Apps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 pt-2 move-to-next-section">
+            <div class="col-lg-12">
+                <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow border text-white">
+                    <div>
+                        <h4 class="title mb-0 fw-bold">Browser Compatibility</h4>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-12 mt-4 pt-2">
+                <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow border text-white">
+                    <div class="flex-1">
+                        <h4 class="title mb-0">Browser Compatibility</h4>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-12 mt-4 pt-2">
+                <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow border text-white">
+                    <div class="flex-1">
+                        <h4 class="title mb-0">Retina Ready</h4>
                     </div>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
     </div><!--end container-->
 </section><!--end section-->
-<!-- Hero End -->
+<!-- Second Section for Small Cards -->
 
-<section class="bg-half-170 d-table w-100 overflow-hidden" id="home">
-    <div class="container">
-        <div class="row align-items-center pt-5">
-            <div class="col-lg-7 col-md-6">
-                <div class="title-heading">
-                    <h1 class="heading mb-3">Everything you <br> need to do <br> better work</h1>
-                    <p class="para-desc text-muted">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
-                    <div class="mt-4 pt-2">
-                        <a href="https://1.envato.market/landrick" target="_blank" class="btn btn-primary">Explore App<span class="badge rounded-pill bg-danger ms-2">v4.8.0</span></a>
-                    </div>
-                </div>
-            </div><!--end col-->
+<!-- Hero End --> *@
 
-            <div class="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                <div class="classic-saas-image position-relative">
-                    <div class="bg-saas-shape position-relative">
-                        <img src="assets/images/laptop.png" class="mx-auto d-block" alt="">
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
-</section>
+
+
 
 
 
@@ -841,7 +942,7 @@
 </section>
 <!-- Featured App End-->
 <!--Test Start-->
-@model NexCountStoreFront.Pages.IndexModel
+@* @model NexCountStoreFront.Pages.IndexModel
 
 
 <div class="card border border-light shadow-dark " style="width: 30rem;">
@@ -862,10 +963,8 @@
                                 <h6 class="card-title">@cardData.Title</h6>
                                 <p>@cardData.Description</p>
                                 <div class="post-meta d-flex justify-content-end mt-2">
-                                    <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                    <a href="" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
                                 </div>
-                               
-
                             </div>
                         </div>
                     </div>
@@ -874,17 +973,6 @@
             </li>
         }
     </ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
+</div> *@
+<!--Test End-->
 <!--Test Ends-->
