@@ -1,0 +1,139 @@
+﻿@page
+@model NexCountStoreFront.Pages.IndexModel
+
+<!--Hero Start-->
+<section class="bg-half-100 bg-primary d-table w-100" style="background-image: url('images/job/bg.png');">
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="pages-heading">
+                    <h2 class="title text-white title-dark mb-0"> About Us </h2>
+                </div>
+            </div>  <!--end col-->
+        </div><!--end row-->
+    </div> <!--end container-->
+</section>
+<!--Hero End-->
+
+
+<!-- Shape Start -->
+<div class="position-relative">
+    <div class="shape overflow-hidden text-color-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!--Shape End-->
+
+
+<!-- Our Story Start -->
+<section class="section">
+    <div class="container ">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="position-relative">
+                    <img src="assets/images/company/about.jpg" class="rounded img-fluid mx-auto d-block" alt="">
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="section-title ms-lg-4">
+                    <h4 class="title mb-4 mt-4">Our Story</h4>
+                    <p class="text-muted">At NexCount, our primary business objective is to empower businesses across diverse industries by providing cutting-edge software solutions. We strive to be a catalyst for operational excellence, leveraging innovation and technology to address the unique challenges faced by our clients.</p>
+                    <a href="javascript:void(0)" class="btn btn-primary mt-3">Start Now<i class="uil uil-angle-right-b"></i></a>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section>
+<!-- Our Story End -->
+
+
+<!--  How do we works ? Start -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h6 class="text-primary">Work Process</h6>
+                    <h4 class="title mb-4">How We Work</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">NexCount</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="card features feature-primary feature-clean work-process bg-transparent process-arrow border-0 text-center">
+                    <div class="icons text-center mx-auto">
+                        <i class="uil uil-presentation-edit rounded h3 mb-0"></i>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="text-dark">Discussion</h5>
+                        <p class="text-muted mb-0">Discuss your business needs and requirements with us.</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-md-5 pt-md-3 mt-4 pt-2">
+                <div class="card features feature-primary feature-clean work-process bg-transparent process-arrow border-0 text-center">
+                    <div class="icons text-center mx-auto">
+                        <i class="uil uil-airplay rounded h3 mb-0"></i>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="text-dark">Strategy &amp; Testing</h5>
+                        <p class="text-muted mb-0">Create a strategy and test it for optimal performance.</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-md-5 pt-md-5 mt-4 pt-2">
+                <div class="card features feature-primary feature-clean work-process bg-transparent d-none-arrow border-0 text-center">
+                    <div class="icons text-center mx-auto">
+                        <i class="uil uil-image-check rounded h3 mb-0"></i>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="text-dark">Reporting</h5>
+                        <p class="text-muted mb-0">Receive detailed reports on the progress and results of our work.</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section>
+<!--  How do we works ? End -->
+
+
+<!--Featured Apps-->
+<section>
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-2 ">
+                    <h1 class="title">Key Features</h1>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            @foreach (var cardData in Model.CardDataList)
+            {
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
+                        <div class="icon text-center rounded-circle me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor fea icon-ex-md"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="title mb-0">@cardData.Title</h4>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            }
+        </div><!--end row-->
+    </div><!--end container-->
+</section>
+<!--Featured Apps-->

@@ -10,6 +10,10 @@
     #home{
         background: url('images/gym/bg.jpg') center center;
     }
+    .features{
+        background-color: white;
+    }
+    
 
     @@media (max-width: 767px) {
 
@@ -17,7 +21,20 @@
             text-align: center;
             margin-bottom: 25px
         }
+
+        .featuredcl {
+            text-align: center;
+            margin-top: 25px
+        }
     }
+
+    @@media (max-width: 767px) {
+        
+    
+    }
+
+
+    
 
 </style>
 <section id="home" class="bg-home d-flex align-items-center" @* style="background: url('images/gym/bg.jpg') center center;" *@>
@@ -30,11 +47,11 @@
                 <div class="title-heading">
                     <h1 class="heading mb-3 text-white">NexCount Apps Store</h1>
 
-                    <p class="para-desc text-muted text-white">
-                        We help empower your business with the right software. Explore our offerings and start growing today!.
+                    <p class="para-desc text-white">
+                        We help empower your business with the right software <br />Explore our offerings and start growing today
 
                     </p>
-                    <p class="para-desc text-muted text-white">Explore our diverse selection of ready-made and customizable applications tailored to your specific needs and budget.</p>
+                    <p class="para-desc text-white">Explore our diverse selection of ready-made and customizable applications tailored to your specific needs and budget</p>
                     <div class="mt-4 pt-2">
                         <a href="https://1.envato.market/landrick" target="_blank" class="btn btn-primary">Explore App</a>
                     </div>
@@ -43,20 +60,22 @@
             <!-- Second Row - Always in Column Form -->
 
 
-            <div class="col-md-6">
+            <div class="col-md-5 offset-md-1">
                 <div class="row">
+                    <h3 class="text-white featuredcl">Featured Apps</h3>
                     @foreach (var cardData in Model.CardDataList)
                     {
                         <div class="col-md-12 my-2">
+                            @* <div class="d-flex features feature-primary key-feature align-items-center p-2 rounded shadow border border-light"> *@
                             <div class="d-flex features feature-primary key-feature align-items-center p-2 rounded shadow border border-light">
                                 <div class="icon text-center rounded-circle me-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor fea icon-ex-md"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                                    @*  <img src="@cardData.ImageUrl" class="img-fluid rounded" alt="..." width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> *@
+                                    <svg class="shadow " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor fea icon-ex-md"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                    @* <img src="@cardData.ImageUrl" width="24" height="24" /> *@
 
                                 </div>
                                 <div class="flex-1 ">
-                                    <h4 class="title mb-0 text-white">@cardData.Title.</h4>
-                                    <p class="text-muted text-white">
+                                    <h4 class="title mb-0 text-dark">@cardData.Title.</h4>
+                                    <p class="text-dark">
                                         @cardData.Description
 
                                     </p>
@@ -236,16 +255,19 @@
 
 </section>
 <!--End of Introduction-->
+
+
+
 <!--Demo Intro Start-->
 <section class="section">
-    <div class="container mt-100 mt-60">
+    <div class="container ">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
                         <div class="card work-container work-primary work-modern overflow-hidden rounded border-0 shadow-md">
                             <div class="card-body p-0">
-                                <img src="images/gym/about03.jpg" class="img-fluid" alt="work-image">
+                                <img src="images/gym/about03.jpg" class="img-fluid " alt="work-image">
                                 <div class="overlay-work"></div>
                                 <div class="content">
                                     <a href="javascript:void(0)" class="title text-white d-block fw-bold">Web Development</a>
@@ -260,7 +282,7 @@
                             <div class="col-lg-12 col-md-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
                                 <div class="card work-container work-primary work-modern overflow-hidden rounded border-0 shadow-md">
                                     <div class="card-body p-0">
-                                        <img src="images/gym/bg.jpg" class="img-fluid" alt="work-image">
+                                        <img src="images/gym/bg.jpg" class="img-fluid " alt="work-image">
                                         <div class="overlay-work"></div>
                                         <div class="content">
                                             <a href="javascript:void(0)" class="title text-white d-block fw-bold">Michanical Engineer</a>
@@ -273,7 +295,7 @@
                             <div class="col-lg-12 col-md-12 mt-4 pt-2">
                                 <div class="card work-container work-primary work-modern overflow-hidden rounded border-0 shadow-md">
                                     <div class="card-body p-0">
-                                        <img src="images/gym/Invoicing.jpg" class="img-fluid" alt="work-image">
+                                        <img src="images/gym/Invoicing.jpg" class="img-fluid " alt="work-image">
                                         <div class="overlay-work"></div>
                                         <div class="content">
                                             <a href="javascript:void(0)" class="title text-white d-block fw-bold">Chartered Accountant</a>
@@ -316,6 +338,9 @@
     </div><!--end container-->
 </section>
 <!--Demo Intro End-->
+
+
+
 <!--Software Solutions Starts-->
 <section class=" mt-5">
     <h1 class=" text-center">Software Solutions</h1>
@@ -941,6 +966,40 @@
 
 </section>
 <!-- Featured App End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--Test Start-->
 @* @model NexCountStoreFront.Pages.IndexModel
 
