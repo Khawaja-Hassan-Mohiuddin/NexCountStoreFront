@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace NexCountStoreFront.Pages
 {
-    public class ExploreAppModel : PageModel
+    public class ExplorerAppModel2 : PageModel
     {
         public List<AppCard> AppCardData { get; set; } = new List<AppCard>();
 

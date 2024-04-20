@@ -25,11 +25,8 @@ namespace NexCountStoreFront.Pages
             {
                 new CardData { ImageUrl = "images/gym/Invoicing.jpg", Title = "Invoicing", Description = "Our Invoicing app for qutions", Url = "appdetail/appone" },
                 new CardData { ImageUrl = "images/gym/Invoicing.jpg", Title = "Finance", Description = "Our Finance app for qs", Url = "appdetail/apptwo" },
-                new CardData { ImageUrl = "images/gym/Invoicing.jpg", Title = "Accounting", Description = "Our Accounting app for quick and precise transactions", Url = "appdetail/appthree" },
-                new CardData { ImageUrl = "images/gym/Invoicing.jpg", Title = "CRM", Description = "Our CRM app for quick and precise transactions", Url = "appdetail/appthree" },
-                new CardData { ImageUrl = "images/gym/Invoicing.jpg", Title = "People", Description = "Our People app for quick and precise transactions", Url = "appdetail/appthree" },
-                new CardData { ImageUrl = "images/gym/Invoicing.jpg", Title = "Collaborative", Description = "Our Collaborative app for quick and precise transactions", Url = "appdetail/appthree" },
-                new CardData { ImageUrl = "images/gym/Invoicing.jpg", Title = "Transport", Description = "Our Transport app for quick and precise transactions", Url = "appdetail/appthree" }
+                new CardData { ImageUrl = "images/gym/Invoicing.jpg", Title = "Accounting", Description = "Our Accounting app for quick and precise transactions", Url = "appdetail/appthree" }
+
             };
         }
 

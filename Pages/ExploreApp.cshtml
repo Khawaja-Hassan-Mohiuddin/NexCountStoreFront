@@ -1,8 +1,21 @@
 ﻿@page
-@model NexCountStoreFront.Pages.AppsListModel
+@model NexCountStoreFront.Pages.ExploreAppModel
 @{
+    ViewData["Title"] = "Explore page";
 }
 
+<style>
+    #FeaturedApp, #Sales, #Marketing, #HumanResource::before {
+        display: block;
+        margin-top: -285px;
+        height: 285px;
+        /* margin-top: -300px;
+                    height: 150px; */
+        visibility: hidden;
+        pointer-events: none;
+        scroll-behavior: smooth;
+    }
+</style>
 
 <!-- Hero Start -->
 <section class="bg-half-100 bg-primary d-table w-100" style="background-image: url('images/job/bg.png');">
@@ -26,15 +39,6 @@
     </div>
 </div>
 <!--Shape End-->
-
-
-
-
-
-
-
-
-
 <!--Finalized layout of this page Start-->
 <section class="section">
     <div class="mx-3 my-2">
@@ -42,125 +46,244 @@
             <!-- Sidebar -->
             <div class="col-lg-3 col-md-6 col-12 mt-4 ">
                 <div class="sidebar p-4 rounded shadow">
-                    <!-- SEARCH -->
+                    @* <!-- SEARCH -->
                     <div class="widget">
-                        <form role="search" method="get">
-                            <div class="input-group mb-3 border rounded">
-                                <input type="text" id="s" name="s" class="form-control border-0" placeholder="Search Keywords...">
-                                <button type="submit" class="input-group-text bg-transparent border-0" id="searchsubmit"><i class="uil uil-search"></i></button>
-                            </div>
-                        </form>
+                    <form role="search" method="get">
+                    <div class="input-group mb-3 border rounded">
+                    <input type="text" id="s" name="s" class="form-control border-0" placeholder="Search Keywords...">
+                    <button type="submit" class="input-group-text bg-transparent border-0" id="searchsubmit"><i class="uil uil-search"></i></button>
+                    </div>
+                    </form>
                     </div>
                     <!-- SEARCH -->
                     <!-- Categories -->
                     <div class="widget mb-4 pb-4 border-bottom">
-                        <h5 class="widget-title">Featured Apps</h5>
-                        <div class="mt-4 mb-0">
-                            <select class="form-select form-control" aria-label="Default select example">
-                                <option selected>All Jobs</option>
-                                <option>Digital & Creative</option>
-                                <option>Accountancy</option>
-                                <option>Banking</option>
-                                <option>IT Contractor</option>
-                                <option>Graduate</option>
-                                <option>Estate Agency</option>
-                            </select>
-                        </div>
+                    <h5 class="widget-title">Featured Apps</h5>
+                    <div class="mt-4 mb-0">
+                    <select class="form-select form-control" aria-label="Default select example">
+                    <option selected>All Jobs</option>
+                    <option>Digital & Creative</option>
+                    <option>Accountancy</option>
+                    <option>Banking</option>
+                    <option>IT Contractor</option>
+                    <option>Graduate</option>
+                    <option>Estate Agency</option>
+                    </select>
                     </div>
-                    <!-- Categories -->
+                    </div>
+                    <!-- Categories --> *@
+                    <!-- Anchor Tags Start -->
+                    @*  <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                    </div>  *@
+                    @* <div class="list-group">
+                    <a href="#FeaturedApp">Featured App </a>
+                    <a href="#Sales">Sales</a>
+                    <a href="#Marketing">Marketing</a>
+                    <a href="#HumanResource">Human Resource</a>
+                    </div> *@
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#FeaturedApp">Featured App</a>
+                        <a class="list-group-item list-group-item-action" href="#Sales">Sales</a>
+                        <a class="list-group-item list-group-item-action" href="#Marketing">Marketing</a>
+                        <a class="list-group-item list-group-item-action" href="#HumanResource">Human Resource</a>
+                    </div>
+
                 </div>
+                <!-- Anchor Tags End -->
             </div>
+
+
             <!-- End Sidebar -->
             <!-- Main Content -->
-            <div class="col-lg-9 col-md-6 col-12 mt-lg-0 pt-2 pt-lg-0">
-                <h1 class="text-center">Featured Apps</h1>
-                <div class="row">
-                    <!-- First Card -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 mt-4">
-                        <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
-                            <div class="icons text-center mx-auto">
-                                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
-                            </div>
-                            <div class="card-body p-0 content">
-                                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
-                                <p class="text-muted">The most well-known which is said to have originated</p>
-                                @* <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
-                                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Second Card -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 mt-4">
-                        <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
-                            <div class="icons text-center mx-auto">
-                                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
-                            </div>
-                            <div class="card-body p-0 content">
-                                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
-                                <p class="text-muted">The most well-known which is said to have originated</p>
-                                @* <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
-                                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+            <div class="col-lg-9 col-md-6 col-12 mt-lg-0 pt-2 pt-lg-0 container">
+
+                <!-- First Section Start -->
+
+
+                <div class="row border-black mb-10">
+                    <h1 class="text-center" id="FeaturedApp">Featured App</h1>
+
+                    @*  class="scrollspy-example"  *@
+                    @foreach (var appCard in Model.AppCardData)
+                    {
+                        <!-- First Card -->
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
+                                </div>
+                                <div class="card-body p-0 content">
+                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Invoicing</a></h5>
+                                    <p class="text-muted">Our Invoicing app for qutions</p>
+                                    @* <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
+                                    <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Third Card -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 mt-4">
-                        <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
-                            <div class="icons text-center mx-auto">
-                                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
-                            </div>
-                            <div class="card-body p-0 content">
-                                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
-                                <p class="text-muted">The most well-known which is said to have originated</p>
-                                @* <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
-                                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fourth Card -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 mt-4">
-                        <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
-                            <div class="icons text-center mx-auto">
-                                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
-                            </div>
-                            <div class="card-body p-0 content">
-                                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
-                                <p class="text-muted">The most well-known which is said to have originated</p>
-                                @* <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
-                                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fifth Card -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 mt-4">
-                        <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
-                            <div class="icons text-center mx-auto">
-                                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
-                            </div>
-                            <div class="card-body p-0 content">
-                                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
-                                <p class="text-muted">The most well-known which is said to have originated</p>
-                                @* <a href="javascript:void(0)" class="read-more  btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
-                                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
+
+
+                    }
+
                 </div>
+
+
+                @* <!-- Second Card -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                <div class="icons text-center mx-auto">
+                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
+                </div>
+                <div class="card-body p-0 content">
+                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
+                <p class="text-muted">The most well-known which is said to have originated</p>
+                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+                </div>
+                </div>
+                </div>
+                <!-- Third Card -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                <div class="icons text-center mx-auto">
+                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
+                </div>
+                <div class="card-body p-0 content">
+                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
+                <p class="text-muted">The most well-known which is said to have originated</p>
+                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+                </div>
+                </div>
+                </div>
+                <!-- Fourth Card -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                <div class="icons text-center mx-auto">
+                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
+                </div>
+                <div class="card-body p-0 content">
+                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
+                <p class="text-muted">The most well-known which is said to have originated</p>
+                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+                </div>
+                </div>
+                </div>
+                <!-- Fifth Card -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                <div class="icons text-center mx-auto">
+                <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
+                </div>
+                <div class="card-body p-0 content">
+                <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Best Tax Advantages</a></h5>
+                <p class="text-muted">The most well-known which is said to have originated</p>
+                <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+                </div>
+                </div>
+                </div> *@
+
+
+                
+                <!-- First Section End -->
+                <!-- Second Section Start -->
+
+                <section class="mb-10">
+                    <h1 class="" id="Sales">Sales</h1>
+                <div class="row">
+                    
+                    @*  class="scrollspy-example"  *@
+                    @foreach (var appCard in Model.AppCardData)
+                    {
+
+                        <!-- First Card -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
+                                </div>
+                                <div class="card-body p-0 content">
+                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Accounting</a></h5>
+                                    <p class="text-muted">Our Accounting app for quick and precise transactions</p>
+                                    @* <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
+                                    <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                </section>
+                <!-- Second Section End -->
+                <!-- Third Section Start -->
+
+                <div class="row">
+                    <h1 class="" id="Marketing">Marketing</h1>
+                    @*  class="scrollspy-example" *@
+                    @foreach (var appCard in Model.AppCardData)
+                    {
+
+                        <!-- First Card -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
+                                </div>
+                                <div class="card-body p-0 content">
+                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Invoicing</a></h5>
+                                    <p class="text-muted">Our Finance app for qs</p>
+                                    @* <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
+                                    <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+                <!-- Third Section End -->
+                <!-- Fourth Section Start -->
+
+                <div class="row">
+                    <h1 class="" id="HumanResource">Human Resource</h1>
+
+                    @* class="scrollspy-example"  *@
+                    @foreach (var appCard in Model.AppCardData)
+                    {
+
+                        <!-- First Card -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                            <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                <div class="icons text-center mx-auto">
+                                    <i class="uil uil-ruler-combined rounded h3 mb-0 mx-auto"></i>
+                                </div>
+                                <div class="card-body p-0 content">
+                                    <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">@appCard.AppTitle</a></h5>
+                                    <p class="text-muted">@appCard.AppDescription</p>
+                                    @* <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a> *@
+                                    <a class=" text-white btn btn-primary ">Read More <i class="uil uil-angle-right-b align-middle text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+                <!-- Fourth Section End -->
             </div>
             <!-- Main Content -->
-        </div>
 
-        <div class="col-12 mt-4 pt-2">
-            <!-- PAGINATION START -->
-            <ul class="pagination justify-content-center mb-0">
-                <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous">Prev</a></li>
-                <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next">Next</a></li>
-            </ul>
-            <!-- PAGINATION END -->
-        </div><!--end col-->
-    </div>
+
+            <div class="col-12 mt-4 pt-2">
+                <!-- PAGINATION START -->
+                <ul class="pagination justify-content-center mb-0">
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous">Prev</a></li>
+                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next">Next</a></li>
+                </ul>
+                <!-- PAGINATION END -->
+            </div><!--end col-->
+        </div>
 </section>
 <!--Finalized layout of this page End-->

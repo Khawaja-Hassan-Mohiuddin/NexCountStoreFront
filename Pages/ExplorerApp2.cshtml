@@ -1,0 +1,382 @@
+﻿@page
+@model NexCountStoreFront.Pages.ExplorerAppModel2
+@{
+    ViewData["Title"] = "Explore page";
+}
+@*
+<!-- Hero Start -->
+<section class="bg-half-100 bg-primary d-table w-100" style="background-image: url('images/job/bg.png');">
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="pages-heading">
+                    <h2 class="title text-white title-dark mb-0"> Business Apps </h2>
+                </div>
+            </div>  <!--end col-->
+        </div><!--end row-->
+    </div> <!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+<!-- Shape Start -->
+<div class="position-relative">
+    <div class="shape overflow-hidden text-color-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!--Shape End-->
+<!--Content Start-->
+<section>
+    <!-- Transparent Top Navbar (visible on smaller screens) -->
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent d-md-none">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSmall" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownSmall">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Sidebar (visible on larger screens) -->
+    <div class="container-fluid">
+        <div class="row">
+             <nav class="col-md-3 d-none d-md-block bg-light position-fixed vh-100">
+                <div class="sidebar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <!-- Content (adjust padding as needed) -->
+            <main role="main" class="col-md-9 ml-md-auto">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Featured App</h1>
+                </div>
+                <div class="content">
+                    <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Finance</h1>
+                </div>
+                <div class="content">
+                    <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Human Resource</h1>
+                </div>
+                <div class="content">
+                    <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Sales</h1>
+                </div>
+                <div class="content">
+                    <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Marketing</h1>
+                </div>
+                <div class="content">
+                    <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Collaborating</h1>
+                </div>
+                <div class="content">
+                    <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+</section>*@
+
+@* 
+
+
+
+
+
+
+
+
+
+
+
+<This is the main code>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* Style for the sidebar */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 1; /* Ensure sidebar is above other elements */
+}
+
+/* Style for the links in the sidebar */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Style for the active link in the sidebar */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style for the hover effect on links in the sidebar */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Style for the main content area */
+div.content {
+  margin-left: 200px; /* Width of the sidebar */
+  padding: 1px 16px;
+  height: 1000px; /* Set height as needed */
+}
+
+/* Media query for smaller screens */
+@@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%; /* Full width for smaller screens */
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0; /* Remove margin for content */
+  }
+}
+
+/* Media query for even smaller screens */
+@@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+</style>
+
+
+<body>
+    <div class="sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="content">
+        <!-- Hero Start -->
+        <section class="bg-half-100 bg-primary d-table w-100" style="background-image: url('images/job/bg.png');">
+            <div class="container">
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="pages-heading">
+                            <h2 class="title text-white title-dark mb-0"> Business Apps </h2>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-color-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+        <!--Content Start-->
+        <section>
+            <!-- Transparent Top Navbar (visible on smaller screens) -->
+            <nav class="navbar navbar-expand-md navbar-light bg-transparent d-md-none">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSmall" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownSmall">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Sidebar (visible on larger screens) -->
+            <div class="container-fluid">
+                <div class="row">
+                     <nav class="col-md-3 d-none d-md-block position-fixed vh-100" style="background-color: transparent;">
+                        <div class="sidebar">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav> 
+
+                    <!-- Content (adjust padding as needed) -->
+                    <main role="main" class="col-md-9 ml-md-auto">
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">Featured App</h1>
+                        </div>
+                        <div class="content">
+                            <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">Finance</h1>
+                        </div>
+                        <div class="content">
+                            <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">Human Resource</h1>
+                        </div>
+                        <div class="content">
+                            <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">Sales</h1>
+                        </div>
+                        <div class="content">
+                            <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">Marketing</h1>
+                        </div>
+                        <div class="content">
+                            <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">Collaborating</h1>
+                        </div>
+                        <div class="content">
+                            <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+    </div>
+ *@</body>
