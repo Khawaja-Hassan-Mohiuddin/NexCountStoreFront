@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Explore page";
 }
-@*
+
 <!-- Hero Start -->
 <section class="bg-half-100 bg-primary d-table w-100" style="background-image: url('images/job/bg.png');">
     <div class="container">
@@ -18,7 +18,7 @@
 </section><!--end section-->
 <!-- Hero End -->
 <!-- Shape Start -->
-<div class="position-relative">
+<div class="position-relative h-100">
     <div class="shape overflow-hidden text-color-white">
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
@@ -27,7 +27,7 @@
 </div>
 <!--Shape End-->
 <!--Content Start-->
-<section>
+@*<section>
     <!-- Transparent Top Navbar (visible on smaller screens) -->
     <nav class="navbar navbar-expand-md navbar-light bg-transparent d-md-none">
         <a class="navbar-brand" href="#">Menu</a>
@@ -65,7 +65,9 @@
     <!-- Sidebar (visible on larger screens) -->
     <div class="container-fluid">
         <div class="row">
-             <nav class="col-md-3 d-none d-md-block bg-light position-fixed vh-100">
+            <nav class="col-md-3   d-none d-md-block  bg-light position-sticky  vh-100">
+
+
                 <div class="sidebar">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -99,25 +101,25 @@
             <!-- Content (adjust padding as needed) -->
             <main role="main" class="col-md-9 ml-md-auto">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Featured App</h1>
+                    <h1 class="h2" >Featured App</h1>
                 </div>
                 <div class="content">
                     <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
                 </div>
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Finance</h1>
+                    <h1 class="h2" >Finance</h1>
                 </div>
                 <div class="content">
                     <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
                 </div>
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Human Resource</h1>
+                    <h1 class="h2" >Human Resource</h1>
                 </div>
                 <div class="content">
                     <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
                 </div>
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Sales</h1>
+                    <h1 class="h2" >Sales</h1>
                 </div>
                 <div class="content">
                     <p>This is where your main content goes. It will adjust based on the sidebar visibility.</p>
@@ -137,21 +139,8 @@
             </main>
         </div>
     </div>
-</section>*@
-
-@* 
-
-
-
-
-
-
-
-
-
-
-
-<This is the main code>
+</section>
+*@
 
 
 
@@ -163,6 +152,19 @@
 
 
 
+
+@* <This is the main code> *@
+
+
+
+
+
+
+
+
+
+
+@*
 <style>
 body {
   margin: 0;
@@ -334,7 +336,7 @@ div.content {
                                 </li>
                             </ul>
                         </div>
-                    </nav> 
+                    </nav>
 
                     <!-- Content (adjust padding as needed) -->
                     <main role="main" class="col-md-9 ml-md-auto">
@@ -379,4 +381,755 @@ div.content {
             </div>
         </section>
     </div>
- *@</body>
+</body> *@
+
+
+
+
+<style>
+
+
+
+    /*  header,
+                footer {
+                    background: #eee;
+                    padding: 5rem;
+                    text-align: center;
+                } */
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        /*  max-width: 80%; */
+        margin: 3rem 2rem;
+    }
+
+    /*      .article {
+                    /* background: #eee;  */
+    /* flex-grow: 999;
+                    flex-basis: 0;
+                }
+             */
+
+    /* Styling hero */
+    /* .hero {
+                    max-width: 50rem;
+                    margin-bottom: 3rem;
+                }
+
+                    .hero h1 {
+                        font-size: 4rem;
+                        margin-bottom: .5rem;
+                    }
+
+                    .hero p {
+                        color: #555;
+                        opacity: .8;
+                        line-height: 1.5rem;
+                    }
+
+                    .hero button {
+                        background: #111;
+                        color: #fff;
+                        padding: .7rem 1.5rem;
+                        margin-top: 1rem;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    } */
+
+    /* Styling grid */
+    /* .grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    grid-gap: 2rem;
+                }
+
+                    .grid div {
+                        background: #eee;
+                        height: 10rem;
+                        /* center the text */
+    /* display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+             */
+
+
+    .sidebarExp {
+        background: #eee;
+        height: 10rem;
+        width: 10rem;
+        /* flex-grow: 1;*/
+        /*  flex-basis: 300px;  */
+        position: sticky;
+        top: 2rem;
+        /* center the text */
+        /* display: flex;
+                    flex-direction: column; */
+        /* align-items: center; */
+        /*  justify-content: center; */
+    }
+
+    .box {
+        height: 100px;
+        width: 100%;
+        background-color: grey;
+        margin: 5px;
+        border-bottom: black;
+    }
+</style>
+
+
+
+
+@* <header>Header</header> *@
+@* <main>
+    <div class="row">
+    <section class="sidebarExp">
+        <h1>Sidebar</h1>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </section>
+    <section class="article">
+
+        <div class="row">
+            <div class="box">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+            <div class="box">Box 5</div>
+            <div class="box">Box 6</div>
+            <div class="box">Box 7</div>
+            <div class="box">Box 8</div>
+            <div class="box">Box 9</div>
+            <div class="box">Box 10</div>
+            <div class="box">Box 11</div>
+            <div class="box">Box 12</div>
+        </div>
+    </section>
+    </div>
+
+</main> *@
+@* <footer>Footer</footer> *@
+
+
+
+@* <section class="container">
+<div class="row mt-5">
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent d-md-none">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSmall" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownSmall">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="col-md-2 d-none d-md-block list-group">
+        <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
+            <li class="mb-2 h6">Share</li>
+            <li class="mt-1 list-group-item active">HOME</li>
+            <li class="mt-1 list-group-item ">ABOUT Us</li>
+            <li class="mt-1 list-group-item ">SERVICE</li>
+            <li class="mt-1 list-group-item ">CONTACT US</li>
+            <li class="mt-1 list-group-item ">DEMO</li>
+        </ul><!--end icon-->
+    </div>
+
+     <div class="col-lg-10 ">
+
+        <div class="row   row-cols-1 row-cols-md-3   g-4">
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+
+
+
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</section> *@
+
+
+<section>
+    <div class="container-fluid m-3">
+        <div class="row">
+            <!-- Sidebar for smaller screens -->
+              <nav class="navbar navbar-expand-md navbar-light  d-md-none ">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSmall" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownSmall">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>  
+
+            <style>
+                @@media screen and (max-width: 991px ) {
+                    
+
+                }
+            </style>
+
+
+            <!-- Sidebar for larger screens -->
+            <div class="col-lg-2 d-none d-md-block list-group ctsclass">
+                <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
+                    @* <li class="mb-2 h6">Share</li> *@
+                    <li class="mt-1 list-group-item active">HOME</li>
+                    <li class="mt-1 list-group-item ">ABOUT Us</li>
+                    <li class="mt-1 list-group-item ">SERVICE</li>
+                    <li class="mt-1 list-group-item ">CONTACT US</li>
+                    <li class="mt-1 list-group-item ">DEMO</li>
+                    <li class="mt-1 list-group-item ">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">example</span>
+                        </div>
+                    </li>
+                </ul><!--end icon-->
+            </div>
+
+            <!-- Main content -->
+            
+            <div class="col-lg-10">
+                
+                
+
+
+                <div class="container">
+                    @* <div class="row">
+                        <div class="col-12 d-flex justify-content-end">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div><!--end col-->
+                    </div> *@
+
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="mb-0 border-bottom display-1">Most Viewed Products</h5>
+                        </div><!--end col-->
+                    </div>
+
+                    <div class="row">
+                        
+                        <div class="col-lg-3 col-md-4 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                 @* <ul class="label list-unstyled mb-0">
+                                    <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">Sale</a></li>
+                                </ul> *@ 
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                     <a href="shop-product-detail.html"><img src="assets/images/shop/product/s5.jpg" class="img-fluid" alt=""></a> 
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-5.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    @* <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul> *@
+                                </div>
+                                  <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Earphones</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$3.00</h6>
+                                        @* <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul> *@
+                                    </div>
+                                </div>  
+                            </div>
+                        </div><!--end col-->
+                       
+                        <div class="col-lg-3 col-md-4 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s6.jpg" class="img-fluid" alt=""></a>
+                                    <div class="overlay-work">
+                                        <div class="py-2 bg-soft-dark rounded-bottom out-stock">
+                                            <h6 class="mb-0 text-center">Out of stock</h6>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Elegent Mug</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$4.70 <del class="text-danger ms-2">$6.50</del> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s7.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-7.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Sony Headphones</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$9.99 <span class="text-success ms-2">20% off</span> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <ul class="label list-unstyled mb-0">
+                                    <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Featured</a></li>
+                                </ul>
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s8.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-8.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Wooden Stools</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$22.00 <del class="text-danger ms-2">$25.00</del> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="mb-0  border-bottom display-1">Finance</h1>
+                        </div><!--end col-->
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <ul class="label list-unstyled mb-0">
+                                    <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-primary">New</a></li>
+                                    <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Featured</a></li>
+                                    <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">Sale</a></li>
+                                </ul>
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s1.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-1.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Branded T-Shirt</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$16.00 <del class="text-danger ms-2">$21.00</del> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-6 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s2.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-2.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Shopping Bag</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$21.00 <del class="text-danger ms-2">$25.00</del> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-6 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <ul class="label list-unstyled mb-0">
+                                    <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">Sale</a></li>
+                                </ul>
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s3.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-3.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Elegent Watch</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$5.00 <span class="text-success ms-1">30% off</span> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s4.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-4.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Casual Shoes</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$18.00 <del class="text-danger ms-2">$22.00</del> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <ul class="label list-unstyled mb-0">
+                                    <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">Sale</a></li>
+                                </ul>
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s5.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-5.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Earphones</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$3.00</h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s6.jpg" class="img-fluid" alt=""></a>
+                                    <div class="overlay-work">
+                                        <div class="py-2 bg-soft-dark rounded-bottom out-stock">
+                                            <h6 class="mb-0 text-center">Out of stock</h6>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Elegent Mug</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$4.70 <del class="text-danger ms-2">$6.50</del> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6  col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s7.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-7.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Sony Headphones</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$9.99 <span class="text-success ms-2">20% off</span> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 pt-2">
+                            <div class="card shop-list border-0 position-relative">
+                                <ul class="label list-unstyled mb-0">
+                                    <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Featured</a></li>
+                                </ul>
+                                <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                    <a href="shop-product-detail.html"><img src="assets/images/shop/product/s8.jpg" class="img-fluid" alt=""></a>
+                                    <a href="shop-product-detail.html" class="overlay-work">
+                                        <img src="assets/images/shop/product/s-8.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="list-unstyled shop-icons">
+                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
+                                        <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
+                                        <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body content pt-4 p-2">
+                                    <a href="shop-product-detail.html" class="text-dark product-name h6">Wooden Stools</a>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="text-dark small fst-italic mb-0 mt-1">$22.00 <del class="text-danger ms-2">$25.00</del> </h6>
+                                        <ul class="list-unstyled text-warning mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                
+
+            </div>
+        </div>
+    </div>
+
+</section>
