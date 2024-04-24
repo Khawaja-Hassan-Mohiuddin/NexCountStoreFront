@@ -17,6 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\AppsList.cshtml.cs" />
+    <Compile Remove="Pages\ExploreApp.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\AppsList.cshtml" />
+    <Content Remove="Pages\ExploreApp.cshtml" />
     <Content Remove="wwwroot\js\Test.js" />
   </ItemGroup>
 
