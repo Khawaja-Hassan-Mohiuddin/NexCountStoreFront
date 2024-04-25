@@ -61,47 +61,19 @@
                         </button>
                     </div>
                     <ul class="nav nav-pills nav-justified flex-column rounded shadow p-3 mb-0 sticky-bar" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link rounded" id="webdeveloping" data-bs-toggle="pill" href="#developing" role="tab" aria-controls="developing" aria-selected="false" tabindex="-1">
-                                <div class="text-center py-1">
-                                    <h6 class="mb-0">Home</h6>
-                                </div>
-                            </a><!--end nav link-->
-                        </li><!--end nav item-->
-
-                        <li class="nav-item mt-2" role="presentation">
-                            <a class="nav-link rounded" id="database" data-bs-toggle="pill" href="#data-analise" role="tab" aria-controls="data-analise" aria-selected="false" tabindex="-1">
-                                <div class="text-center py-1">
-                                    <h6 class="mb-0">About Us</h6>
-                                </div>
-                            </a><!--end nav link-->
-                        </li><!--end nav item-->
-
-                        <li class="nav-item mt-2" role="presentation">
-                            <a class="nav-link rounded " id="server" data-bs-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="true">
-                                <div class="text-center py-1">
-                                    <h6 class="mb-0">Service</h6>
-                                </div>
-                            </a><!--end nav link-->
-                        </li><!--end nav item-->
-
-                        <li class="nav-item mt-2" role="presentation">
-                            <a class="nav-link rounded " id="server" data-bs-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="true">
-                                <div class="text-center py-1">
-                                    <h6 class="mb-0">Contact</h6>
-                                </div>
-                            </a><!--end nav link-->
-                        </li><!--end nav item-->
-
-                        <li class="nav-item mt-2" role="presentation">
-                            <a class="nav-link rounded " id="server" data-bs-toggle="pill" href="#security" role="tab" aria-controls="security" aria-selected="true">
-                                <div class="text-center py-1">
-                                    <h6 class="mb-0">Demo</h6>
-                                </div>
-                            </a><!--end nav link-->
-                        </li><!--end nav item-->
+                        @foreach (var group in Model.AppGrouped)
+                        {
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link rounded" id="webdeveloping" data-bs-toggle="pill" href="#developing" role="tab" aria-controls="developing" aria-selected="false" tabindex="-1">
+                                    <div class="text-center py-1">
+                                        <h6 class="mb-0">@group.Key </h6>
+                                    </div>
+                                </a><!--end nav link-->
+                            </li>
+                            <!--end nav item-->
+                        }
                     </ul>
-                    
+
                 </ul><!--end icon-->
             </div>
 
@@ -120,168 +92,38 @@
                         </button>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 mt-5">
-                            <h1>Human Resource</h1>
-                            <p class="mb-2 border-bottom"></p>
-                        </div><!--end col-->
-                    </div>
 
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
-                            <div class="card blog blog-primary rounded card-border-1 shadow">
-                                <div class="position-relative">
-                                    <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
-
-                                    <div class="overlay rounded-top"></div>
-                                </div>
-                                <div class="card-body content text-center">
-                                    <h4 class="text-center">People Management</h4>
-                                    <p class="text-muted mb-0">Enhance HR processes with our People Management app for seamless employee engagement</p>
-                                    <div class="post-meta d-flex justify-content-center mt-2">
-                                        <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!--End Col-->
-
-                        <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
-                            <div class="card blog blog-primary rounded card-border-1 shadow">
-                                <div class="position-relative">
-                                    <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
-
-                                    <div class="overlay rounded-top"></div>
-                                </div>
-                                <div class="card-body content text-center">
-                                    <h4 class="text-center">People Management</h4>
-                                    <p class="text-muted mb-0">Enhance HR processes with our People Management app for seamless employee engagement</p>
-                                    <div class="post-meta d-flex justify-content-center mt-2">
-                                        <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!--End Col-->
-
-                        <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
-                            <div class="card blog blog-primary rounded card-border-1 shadow">
-                                <div class="position-relative">
-                                    <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
-
-                                    <div class="overlay rounded-top"></div>
-                                </div>
-                                <div class="card-body content text-center">
-                                    <h4 class="text-center">People Management</h4>
-                                    <p class="text-muted mb-0">Enhance HR processes with our People Management app for seamless employee engagement</p>
-                                    <div class="post-meta d-flex justify-content-center mt-2">
-                                        <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!--End Col-->
-
-                        <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
-                            <div class="card blog blog-primary rounded card-border-1 shadow">
-                                <div class="position-relative">
-                                    <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
-
-                                    <div class="overlay rounded-top"></div>
-                                </div>
-                                <div class="card-body content text-center">
-                                    <h4 class="text-center">People Management</h4>
-                                    <p class="text-muted mb-0">Enhance HR processes with our People Management app for seamless employee engagement</p>
-                                    <div class="post-meta d-flex justify-content-center mt-2">
-                                        <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!--End Col-->
+                    @foreach (var group in Model.AppGrouped)
+                    {
 
                         <div class="row">
                             <div class="col-12 mt-5">
-                                <h1>Finance</h1>
+                                <h1>@group.Key</h1>
                                 <p class="mb-2 border-bottom"></p>
                             </div><!--end col-->
                         </div>
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
-                                <div class="card blog blog-primary rounded card-border-1 shadow">
-                                    <div class="position-relative">
-                                        <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
-
-                                        <div class="overlay rounded-top"></div>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <h4 class="text-center">People Management</h4>
-                                        <p class="text-muted mb-0">Enhance HR processes with our People Management app for seamless employee engagement</p>
-                                        <div class="post-meta d-flex justify-content-center mt-2">
-                                            <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                            @foreach (var item in group)
+                            {
+                                <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
+                                    <div class="card blog blog-primary rounded card-border-1 shadow">
+                                        <div class="position-relative">
+                                            <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
+                                            <div class="overlay rounded-top"></div>
                                         </div>
-                                    </div>
-
-                                </div>
-                            </div><!--End Col-->
-
-                            <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
-                                <div class="card blog blog-primary rounded card-border-1 shadow">
-                                    <div class="position-relative">
-                                        <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
-
-                                        <div class="overlay rounded-top"></div>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <h4 class="text-center">People Management</h4>
-                                        <p class="text-muted mb-0">Enhance HR processes with our People Management app for seamless employee engagement</p>
-                                        <div class="post-meta d-flex justify-content-center mt-2">
-                                            <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                        <div class="card-body content text-center">
+                                            <h4 class="text-center">@item.AppTitle </h4>
+                                            <p class="text-muted mb-0">@item.AppDescription  @* Enhance HR processes with our People Management app for seamless employee engagement *@</p>
+                                            <div class="post-meta d-flex justify-content-center mt-2">
+                                                <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                            </div>
                                         </div>
+
                                     </div>
-
-                                </div>
-                            </div><!--End Col-->
-
-                            <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
-                                <div class="card blog blog-primary rounded card-border-1 shadow">
-                                    <div class="position-relative">
-                                        <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
-
-                                        <div class="overlay rounded-top"></div>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <h4 class="text-center">People Management</h4>
-                                        <p class="text-muted mb-0">Enhance HR processes with our People Management app for seamless employee engagement</p>
-                                        <div class="post-meta d-flex justify-content-center mt-2">
-                                            <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div><!--End Col-->
-
-                            <div class="col-lg-4 col-md-6 col-sm-6  col-12 mt-4 pt-2">
-                                <div class="card blog blog-primary rounded card-border-1 shadow">
-                                    <div class="position-relative">
-                                        <img src="images/gym/Invoicing.jpg" class="card-img-top rounded-top" alt="...">
-
-                                        <div class="overlay rounded-top"></div>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <h4 class="text-center">People Management</h4>
-                                        <p class="text-muted mb-0">Enhance HR processes with our People Management app for seamless employee engagement</p>
-                                        <div class="post-meta d-flex justify-content-center mt-2">
-                                            <a href="appdetail/appone" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div><!--End Col-->
-
+                                </div> <!--End Col-->
+                            }
                         </div>
-                    </div>
+                    }
                 </div>
             </div>
         </div>

@@ -6,5 +6,6 @@
         public string AppTitle { get; set; }
         public string AppDescription { get; set; }
         public int Id { get; internal set; }
+        public string Category { get; set; }
     }
 }
